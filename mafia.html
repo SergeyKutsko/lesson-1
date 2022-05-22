@@ -6,14 +6,49 @@
   </head>
   
   <body>
+  	<div align="center">
   	<h1>This is very hot girl</h1>
-  	<img width="600" height="400" src="./hot-girl-cool.jpg"> </img>
-  	<ul>
-  		<li> 1</li>
-  		<li> 2</li>
-  		<li> 3</li>
-  		<li> 4</li>
-  		<li> 5</li>
+  	
+    <div align="center">
+  	<img id="girl" width="600" height="400" src="./hot-girl-cool.jpg" style="border: medium solid black;width: 100px !impotant;" > </img>
+  	<ul id='list'>
+  		<button onclick=" document.getElementById('girl').width = 650; document.getElementById('girl').height=500  "> 100</button>
+  		<br/>
+  		<button onclick=" document.getElementById('girl').width = 750; document.getElementById('girl').height=550    "> 200</button>
+  		<br/>
+  		<button onclick=" document.getElementById('girl').width = 800; document.getElementById('girl').height=600    "> 300</button>
+  		<br/>
+  		<button onclick=" document.getElementById('girl').width = 850; document.getElementById('girl').height=650    "> 400</button>
+      	<br/>
+  		<button onclick=" document.getElementById('girl').width = 950; document.getElementById('girl').height=750    "> 500</button>
+  		<br/>
   	</ul>
+    </div>
+  	<button id='red' style="color: red;">RED</button>
+
+  	<button id='green' style="color: green;">GREEN</button>
+
+  	<button id='blue' style="color: blue;">BLUE</button>
+
+  	<script> 
+      var red = document.getElementById('red');
+      var green = document.getElementById('green');
+      var blue = document.getElementById('blue');
+      var girl = document.getElementById('girl');
+      
+      red.onclick = function(){
+        girl.style = "border: medium solid red;"
+      };
+      green.onclick = function(){
+      	girl.style = "border: medium solid green;"
+      //  alert('I am green')
+      };
+      blue.onclick = function(){
+      	girl.style = "border: medium solid blue;"
+       // alert('I am blue')
+      };
+      
+
+  	</script>
   </body>
 </html>
